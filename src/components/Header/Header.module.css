@@ -1,0 +1,157 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 8px #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 70px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    padding: 5px 20px;
+  }
+}
+
+.headerContent {
+  display: flex;
+  margin-left: 44px;
+  margin-right: 44px;
+  width: 1022px;
+  max-width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  align-self: stretch;
+  display: flex;
+  gap: 1px;
+  color: #000;
+  white-space: nowrap;
+  text-align: center;
+  font: 400 20px/1 Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .logo {
+    white-space: initial;
+  }
+}
+
+.logoImage {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  width: 54px;
+}
+
+.logoText {
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+.navigation {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 40px 58px;
+  color: #787878;
+  flex-wrap: wrap;
+  margin: auto 0;
+  font: 400 18px Ubuntu, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.navItem {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.activeNavItem {
+  color: #f48649;
+}
+
+.buyButton {
+  border-radius: 7px;
+  background-color: #ffa264;
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  padding: 5px 34px;
+}
+
+@media (max-width: 991px) {
+  .buyButton {
+    padding: 0 20px;
+  }
+}
+
+.userSection {
+  align-self: stretch;
+  display: flex;
+  gap: 29px;
+  white-space: nowrap;
+  text-align: center;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .userSection {
+    white-space: initial;
+  }
+}
+
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .cartWrapper {
+    white-space: initial;
+  }
+}
+
+.cartCount {
+  color: #fff;
+  align-self: end;
+  font: 300 12px Poppins, sans-serif;
+}
+
+.cartIcon {
+  display: flex;
+  gap: 10px;
+  color: #000;
+  font: 25px/1 Font Awesome 5 Free, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .cartIcon {
+    white-space: initial;
+  }
+}
+
+.cartIconEmpty {
+  font-weight: 400;
+}
+
+.cartIconFull {
+  font-weight: 900;
+}
+
+.userIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 39px;
+}

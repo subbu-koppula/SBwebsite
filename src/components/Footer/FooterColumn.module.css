@@ -1,0 +1,48 @@
+.footerColumn {
+  flex: 1 1 0;
+  min-width: 200px;
+}
+
+.columnTitle {
+  color: #f7f7f7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 34px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  margin-bottom: 26px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #fbb704;
+}
+
+.buttonLink {
+  display: inline-block;
+  background-color: #fbb703;
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.buttonLink:hover {
+  background-color: #e0a503;
+  color: #fff;
+}

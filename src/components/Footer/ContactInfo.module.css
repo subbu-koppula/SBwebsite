@@ -1,0 +1,55 @@
+.contactInfo {
+  margin-top: 17px;
+}
+
+.contactTitle {
+  color: #f7f7f7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 36px;
+}
+
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-style: normal;
+}
+
+.addressLine,
+.phoneLine,
+.emailLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #fbb704;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.icon::before {
+  content: '\f3c5';
+}
+
+.phoneLine .icon::before {
+  content: '\f095';
+}
+
+.emailLine .icon::before {
+  content: '\f0e0';
+}
+
+.phoneNumber,
+.emailAddress {
+  color: #fff;
+  text-decoration: none;
+}
+
+.phoneNumber:hover,
+.emailAddress:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+ align-items: center;
+ justify-content: center;
+ padding: 25px 25px;
+ background-color: #f2f2f2;
+ flex-wrap: wrap;
+}
+
+.card{
+  /* background-color: orange; */
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  border: solid;
+  border-color: white;
+  border-width: 3px;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 40px;
+}
+
+.title{
+  display: inline;
+}
+

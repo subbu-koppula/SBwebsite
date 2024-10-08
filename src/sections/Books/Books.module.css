@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: grey;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  background: linear-gradient(to bottom, #695a54 0%, #8e7369 25%, #8f9a7d 100%);
+  /* padding: 20px; */
+}
+
+.BooksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 10px;
+  
+}
+
+.heading {
+  color: white;
+  font-size: 30px;
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.title {
+  color: #f48649;
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.image {
+  width: 198px;
+  height: 277px;
+  object-fit: cover;
+}
+
+.bookTitle{
+    font-size: 14px;
+    font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+    color: #C9F0FA;
+}
+
+.bookDesc{
+    font-size: 13px;
+    font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+    color: #4C4D4D;
+}
+
+.ctaButton {
+  border: solid;
+  border-width: 2px;
+  border-color: #facfb7;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #84411d;
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+}

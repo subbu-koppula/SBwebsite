@@ -1,0 +1,130 @@
+.section {
+  background-color: #f2f2f2;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 62px 80px;
+}
+
+@media (max-width: 991px) {
+  .section {
+    max-width: 100%;
+    margin-right: 2px;
+    padding: 0 20px;
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 1125px;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  /* gap: 40px 100px; */
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .content {
+    max-width: 100%;
+  }
+}
+
+.header {
+  align-self: start;
+  display: flex;
+  margin-top: 11px;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+}
+
+.title {
+  color: #1b1b1b;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  font: 400 40px/1 Libre Baskerville, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.subtitle {
+  color: #f48649;
+  align-self: center;
+  margin-top: 10px;
+  font: 400 18px Libre Baskerville, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.authorInfo {
+  display: flex;
+  gap: 15px;
+  margin: 10px auto 0;
+}
+
+@media (max-width: 991px) {
+  .authorInfo {
+    margin-left: auto;
+  }
+}
+
+.authorImage {
+  aspect-ratio: 1.2;
+  object-fit: contain;
+  object-position: top;
+  width: 80px;
+  border-radius: 40px;
+}
+
+.authorName {
+  color: #1b1b1b;
+  letter-spacing: 1px;
+  margin: auto 0;
+  font: 700 22px/1 Ubuntu, sans-serif;
+}
+
+.testimonialContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto 0;
+  box-sizing: border-box; 
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .testimonialContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.testimonialHeading {
+  color: #7c7c7c;
+  margin: 0 auto;
+  font: 700 17px/1 Ubuntu, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .testimonialHeading {
+    max-width: 100%;
+  }
+}
+
+.testimonialText {
+  color: #6c6c6c;
+  margin-top: 15px;
+  text-align: center;
+  font: 300 15px/23px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
