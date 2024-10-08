@@ -16,16 +16,14 @@
   padding: 50px 150px 50px;
 }
 
-/* New rule: blur background on non-desktop devices */
 @media (max-width: 991px) {
   .hero {
-    backdrop-filter: blur(10px); /* Apply background blur */
+    backdrop-filter: blur(10px); 
     max-width: 100%;
     padding: 100px 20px;
   }
   .heroContainer {
     align-items: center;
-    /* background-color: gray; */
   }
 }
 

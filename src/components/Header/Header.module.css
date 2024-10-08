@@ -1,12 +1,23 @@
 .header {
-  background-color: #fff;
-  box-shadow: 0 0 8px #808080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* background-color: #fff; */
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8px 70px;
+  padding: 5px 70px;
+  /* border-radius: 30px; */
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
 }
+
+
 
 @media (max-width: 991px) {
   .header {
@@ -52,6 +63,7 @@
 .logoText {
   flex-basis: auto;
   margin: auto 0;
+  color: #f48649;
 }
 
 .navigation {
@@ -154,4 +166,10 @@
   object-fit: contain;
   object-position: center;
   width: 39px;
+}
+
+@media (min-width: 991px) {
+  .userIcon {
+    display: none;
+  }
 }

@@ -6,14 +6,14 @@ function UserSection() {
   return (
     <div className={styles.userSection}>
       <div className={styles.cartWrapper}>
-        <div className={styles.cartCount}>0</div>
+        <div className={styles.cartCount}></div>
         <div className={styles.cartIcon}>
           <div className={styles.cartIconEmpty}></div>
           <div className={styles.cartIconFull}></div>
         </div>
       </div>
       <button>
-        <img loading="lazy" src={menu} className={styles.userIcon} alt="User profile" />
+        <img src={menu} className={styles.userIcon} alt="User profile" />
       </button>
     </div>
   );

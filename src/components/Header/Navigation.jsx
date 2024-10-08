@@ -17,7 +17,7 @@ function Navigation() {
           </a>
         </div>
       ))}
-      <button className={styles.buyButton}>BUY NOW</button>
+      <a href='https://www.amazon.in/l/27943762031?me=A24O4F91D2LFEP&tag=ShopReferral_298fbf66-022f-4106-bec5-70a3a95ff878&ref=sf_seller_app_share_new_ls_srb' target='_blank' className={styles.buyButton}>BUY NOW</a>
     </nav>
   );
 }
