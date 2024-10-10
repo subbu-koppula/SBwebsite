@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.css';
 import menu from '../../assets/icon/menu.svg';
 console.log(menu)
-function UserSection() {
+function UserSection({toggleMenu}) {
   return (
     <div className={styles.userSection}>
       <div className={styles.cartWrapper}>
@@ -12,7 +12,7 @@ function UserSection() {
           <div className={styles.cartIconFull}></div>
         </div>
       </div>
-      <button>
+      <button onClick={toggleMenu}>
         <img src={menu} className={styles.userIcon} alt="User profile" />
       </button>
     </div>

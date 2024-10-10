@@ -5,25 +5,29 @@
   width: 100%;
   z-index: 100;
   /* background-color: #fff; */
-  backdrop-filter: blur(10px); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5px 70px;
-  /* border-radius: 30px; */
-  /* margin-left: 10px; */
-  /* margin-right: 10px; */
 }
-
-
 
 @media (max-width: 991px) {
   .header {
     max-width: 100%;
     padding: 5px 20px;
   }
+}
+
+.headerBlur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerNoBlur {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .headerContent {
@@ -75,18 +79,76 @@
   flex-wrap: wrap;
   margin: auto 0;
   font: 400 18px Ubuntu, sans-serif;
+  transition: none;
 }
 
 @media (max-width: 991px) {
   .navigation {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 998;
+  }
+
+  .menuOpen {
+    right: 0;
+  }
+
+  .menuClose {
+    right: -100%;
+  }
+
+  .navItem {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  .buyButton {
+    margin-top: 20px;
+    background-color: #ffa264;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .navItem a,
+  .buyButton {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Ensure active item is highlighted */
+  .activeNavItem {
+    color: #f48649;
   }
 }
 
-.navItem {
-  align-self: stretch;
-  margin: auto 0;
+/* Close button for the navigation menu */
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  background: transparent;
+  border: none;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's above everything else */
+  /* display: none; */
 }
+
+
 
 .activeNavItem {
   color: #f48649;
@@ -95,16 +157,10 @@
 .buyButton {
   border-radius: 7px;
   background-color: #ffa264;
-  align-self: stretch;
+  /* align-self: stretch; */
   color: #000;
   text-align: center;
   padding: 5px 34px;
-}
-
-@media (max-width: 991px) {
-  .buyButton {
-    padding: 0 20px;
-  }
 }
 
 .userSection {
@@ -166,10 +222,21 @@
   object-fit: contain;
   object-position: center;
   width: 39px;
+  z-index: 999;
 }
 
 @media (min-width: 991px) {
   .userIcon {
     display: none;
   }
+
+  .closeButton {
+    display: none;
+  }
 }
+
+/* .menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+} */
