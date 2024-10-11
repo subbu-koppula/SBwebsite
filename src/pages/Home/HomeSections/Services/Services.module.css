@@ -1,0 +1,169 @@
+.hero {
+  background-image: url(../../../../assets/images/services.webp);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding: 50px 150px 50px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    backdrop-filter: blur(10px); 
+    max-width: 100%;
+    padding: 100px 20px;
+  }
+  .heroContainer {
+    align-items: center;
+  }
+}
+
+.heroContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  max-width: 1100px;
+}
+
+@media (max-width: 1200px) {
+  .heroContainer {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroContainer {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroContainer {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heroContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .heroContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .heroContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.flexColumn {
+  transition: backdrop-filter 0.3s ease;
+}
+
+
+@media (max-width: 1024px){
+  .flexColumn{
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+
+.flexContainer {
+  margin: 1rem;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  gap: 0.625rem;
+  align-items: center; 
+}
+
+
+.heroContainer {
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.title {
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.subTitle {
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #fbb804;
+  font-weight: 300;
+}
+
+.desc {
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.cardContainer {
+  padding-top: 10px;
+  border: solid;
+  width: 80px;
+  height: 100px;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.cardDesc {
+  font-family: 'Libre Baskerville', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}

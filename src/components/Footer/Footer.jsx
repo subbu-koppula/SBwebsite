@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.footerColumns}>
           <div className={styles.logoColumn}>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
 
-    </section>
+    </footer>
   );
 };
 

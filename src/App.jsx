@@ -1,21 +1,25 @@
-import React from "react";
-import Header from "./components/Header/Header";
-import {Hero, Divider, AboutUs1, AboutUs2, Books, Services, Testimonials, Footer} from "./sections/index"
+// App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Home, AboutUs, Services, Contact, NotFound} from './pages/index';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Header/>
-      <section ><Hero/></section>
-      <section ><Divider/></section>
-      <section ><AboutUs1/></section>
-      <section ><AboutUs2/></section>
-      <section ><Books/></section>
-      <section ><Services/></section>
-      <section ><Testimonials/></section>
-      <footer><Footer/></footer>
-    </>
+    <Router>
+      <Header /> 
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/about" element={<AboutUs />} /> 
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 page */}
+      </Routes>
+      <Footer />
+    </Router>
   );
-};
+}
 
 export default App;
+
