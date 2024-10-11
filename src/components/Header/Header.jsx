@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
@@ -6,23 +6,27 @@ import UserSection from "./UserSection";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  // console.log("initial loading set", menuOpen);
-  const toggleMenu = () => {
-    console.log(menuOpen);
-    setMenuOpen((prevState) => !prevState);
-  };
+  const toggleMenu = (event) => {
+  event.stopPropagation(); // From chatgpt, I don't understand this
+  setMenuOpen((prevState) => !prevState);
+};
+
 
   //below code from chatgpt, I don't know what it does either...
-    useEffect(() => {
+  useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (menuOpen && !event.target.closest(`.${styles.navigation}`)) {
+      if (
+        menuOpen &&
+        !event.target.closest(`.${styles.navigation}`) &&
+        !event.target.closest(`.${styles.menuButton}`)
+      ) {
         setMenuOpen(false);
       }
     };
 
-    document.addEventListener('click', handleOutsideClick);
+    document.addEventListener("click", handleOutsideClick);
     return () => {
-      document.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener("click", handleOutsideClick);
     };
   }, [menuOpen]);
 
