@@ -1,0 +1,122 @@
+.hero {
+  background-image: url(/src/assets/images/ServiceHero.webp);
+  background-size: cover;
+  /* background-color: #4c148c; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  padding: 100px 50px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: black;
+  text-align: left;
+  width: 100%;
+  /* padding-top: 10px; */
+  padding: 0;
+  font-weight: 400;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.text {
+  text-align: left;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.ctaButton {
+  color: white;
+  background-color: #FF6600;
+  width: 120px;
+  height: 36px;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  justify-content: center;
+  text-align: start;
+  align-items: center;
+  /* background-color: steelblue; */
+  width: 750px;
+  max-width: 100%;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.heroCards{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+.cardSet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #eeeeee;
+  border: solid;
+  border-width: 1px;
+  border-color: #b8b8b8;
+  max-width: 218px;
+  max-height: 250px;
+  width: 40%;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.cardButton {
+  border: solid;
+  border-radius: 14px;
+  border-width: 1px;
+  border-color: #4c148c;
+  color: #4c148c;
+  padding: 5px 15px;
+}
+
+@media (max-width:991px){
+  .hero{
+    flex-direction: column;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .text, .heading {
+    text-align: center;
+  }
+  .heroCards{
+    width: 100%;
+    gap: 20px;
+  }
+  .cardSet{
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .card{
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: none;
+    border-radius: 20px;
+  }
+}
