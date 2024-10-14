@@ -8,6 +8,7 @@
   align-items: center;
   gap: 100px;
   padding: 100px 50px;
+  min-height: 70vh;
 }
 
 .heading {
@@ -29,7 +30,7 @@
 
 .ctaButton {
   color: white;
-  background-color: #FF6600;
+  background-color: #ff6600;
   width: 120px;
   height: 36px;
   border-radius: 7px;
@@ -51,14 +52,11 @@
   border-radius: 20px;
 }
 
-.heroCards{
+.heroCards {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-
-
 
 .cardSet {
   display: flex;
@@ -80,7 +78,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -93,26 +91,27 @@
   padding: 5px 15px;
 }
 
-@media (max-width:991px){
-  .hero{
+@media (max-width: 991px) {
+  .hero {
     flex-direction: column;
   }
   .heroContent {
     width: 100%;
   }
-  .text, .heading {
+  .text,
+  .heading {
     text-align: center;
   }
-  .heroCards{
+  .heroCards {
     width: 100%;
     gap: 20px;
   }
-  .cardSet{
+  .cardSet {
     flex-direction: column;
     width: 100%;
     gap: 20px;
   }
-  .card{
+  .card {
     max-width: 400px;
     width: 100%;
     backdrop-filter: blur(10px);

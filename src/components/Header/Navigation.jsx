@@ -1,14 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom"; // Import useLocation for URL tracking
 import styles from "./Header.module.css";
 
 function Navigation({ menuOpen, toggleMenu }) {
+  const location = useLocation(); // Hook to get the current URL location
+  const [activeNavItem, setActiveNavItem] = useState(location.pathname); // Initialize with the current URL
+
   const navItems = [
-    { name: "Home", to: "/", isActive: true },
-    { name: "About us", to: "/about", isActive: false },
-    { name: "Contact", to: "/contact", isActive: false },
-    { name: "Services", to: "/services", isActive: false },
+    { name: "Home", to: "/" },
+    { name: "About us", to: "/about" },
+    { name: "Services", to: "/services" },
+    { name: "Contact", to: "/contact" },
   ];
+
+  // Function to handle click and set active item
+  const handleNavItemClick = (path) => {
+    setActiveNavItem(path); // Update the active item when clicked
+    if (menuOpen) toggleMenu(); // Close the menu if it's open
+  };
 
   return (
     <nav
@@ -24,10 +33,10 @@ function Navigation({ menuOpen, toggleMenu }) {
         <Link
           key={item.name}
           className={`${styles.navItem} ${
-            item.isActive ? styles.activeNavItem : ""
+            activeNavItem === item.to ? styles.activeNavItem : ""
           }`}
           to={item.to} // Use 'to' for Link
-          onClick={menuOpen ? toggleMenu : undefined} 
+          onClick={() => handleNavItemClick(item.to)} // Set active item on click
         >
           {item.name}
         </Link>

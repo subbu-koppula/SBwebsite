@@ -1,0 +1,71 @@
+.container {
+  background-image: url(/src/assets/images/publishing.webp);
+  background-size: cover;
+}
+
+.gridContainer {
+  padding: 100px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #fbe9d4 0%,
+    #fae3ba 100%
+  );
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  border: solid;
+  border-color: #fc9754;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .gridContainer {
+    padding: 100px 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .card{
+    max-width: 250px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    padding: 50px 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card{
+    height: 200px;
+  }
+}
+
+
+
+.card h3 {
+  text-align: center;
+  color: #444444;
+  font-size: 28px;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.card p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+}

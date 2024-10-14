@@ -1,0 +1,92 @@
+.container {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fbfae0 30%,
+    #ffdeca 70%,
+    #f4d9d9 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 100px 300px;
+}
+
+.textContent {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+  line-height: 70px;
+  color: #4c148c;
+  font-weight: 500;
+}
+
+.text {
+  text-align: center;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.cardSet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 25px;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 100px 10px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .cardSet {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  padding: 20px;
+  background-color: #beb7a4;
+  max-width: 268px;
+  gap: 40px;
+  /* height: 522px; */
+  /* max-height: 250px; */
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card h3 {
+  text-align: center;
+  color: #444444;
+  font-size: 28px;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.card p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.ctaButton {
+  color: white;
+  background-color: #4c148c;
+  width: 120px;
+  height: 36px;
+  border-radius: 7px;
+  margin-top: 20px;
+}

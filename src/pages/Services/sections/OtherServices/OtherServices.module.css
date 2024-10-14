@@ -1,0 +1,88 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  height: 100%;
+  padding: 20px;
+}
+
+
+.gridItem {
+  display: flex;
+  height: 530px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .gridItem{
+    height: 400px;
+  }
+}
+
+@media (max-width: 641px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .gridItem{
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gridContainer {
+    width: 100%;
+    padding: 20px 5px;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.color0,
+.color4 {
+  background-color: #000000;
+}
+.color0 h2,
+.color0 li,
+.color4 h2,
+.color4 li {
+  color: #f5e1d5;
+  padding-top: 5px;
+}
+
+.color1,
+.color5 {
+  background-color: #4bd1a0;
+}
+.color1 li,
+.color5 li {
+  color: #000000;
+  padding-top: 5px;
+}
+.color1 h2,
+.color5 h2 {
+  color: #f5e1d5;
+}
+
+.color2,
+.color3 {
+  background-color: #ededed;
+}
+.color2 li,
+.color3 li {
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.color2 h2,
+.color3 h2 {
+  color: #4bd1a0;
+}

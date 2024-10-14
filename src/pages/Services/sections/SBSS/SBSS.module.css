@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 200px;
+    /* flex-wrap: wrap; */
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    /* width: 400px; */
+    justify-content: center;
+    gap: 10px;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.text{
+    max-width: 500px;
+    font-family: "Libre Baskerville", -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+.image{
+  width: auto;   /* Let the browser calculate the width automatically */
+  height: auto;  /* Let the browser calculate the height automatically */
+  max-width: 100%; /* Ensures that the image doesn’t overflow the container */
+  display: block; /* Prevents inline spacing below the image */
+  /* margin-left: 200px; */
+}
+
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text, .title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        padding: 50px 20px;
+    }
+}
